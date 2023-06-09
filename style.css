@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: ; */
 }
 
 /* .container {
@@ -15,6 +14,7 @@ nav {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    
     
 }
 nav .nav-img {
@@ -35,16 +35,38 @@ nav ul li {
 
 .body-image {
     width: inherit;
-    background: url('images/pexels-henry-&-co-1939485.jpg');
+    background: url('images/pexels-magda-ehlers-4097159.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body-text {
+    position: absolute;
+    height: inherit;
+    width: 70%;
+    border: 2px red solid;
+}
+.body-text img {
+    width: 40%;
+    float: right;
+    height: inherit;
 }
 .body-image .pizza-image {
-    height: inherit;
-    width: 50%;
-    float: right;
+    width: 50%; 
+    float: left; 
+    height:inherit;
+    /* width: 100%; */
+    /* opacity: 0.; */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.body-image .right {
+    border-radius: 12% 0 0 12%;
 }
 
 footer {
@@ -52,7 +74,7 @@ footer {
     align-items: center;
     justify-content: center;
     background-color:  #262626;
-    height: 5vh;
+    height: 5vh;;
 }
 footer a{
     color: whitesmoke;

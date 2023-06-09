@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: ; */
+}
+
+/* .container {
+    border: 2px solid red;
+} */
+nav {
+
+    background-color: #262626;
+    height: 5vh;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+nav .nav-img {
+    float: left;
+    margin-left: 20px ;
+}
+nav .nav-img img {
+    border-radius: 12%;
+}
+nav ul li {
+    float: right;
+    color: whitesmoke;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.body-image {
+    width: inherit;
+    background: url('images/pexels-henry-&-co-1939485.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+.body-image .pizza-image {
+    height: inherit;
+    width: 50%;
+    float: right;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #262626;
+    height: 5vh;
+}
+footer a{
+    color: whitesmoke;
+}

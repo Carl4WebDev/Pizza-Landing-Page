@@ -73,7 +73,7 @@ nav button:hover {
     height: inherit;
     flex-basis: 70%;
     flex-wrap: wrap;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .body-text h1{

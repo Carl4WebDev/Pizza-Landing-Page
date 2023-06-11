@@ -24,7 +24,7 @@ nav .nav-img {
 nav .nav-img img {
     border-radius: 12%;
 }
-nav ul li {
+nav ul li  {
     float: right;
     color: whitesmoke;
     display: inline-block;
@@ -32,11 +32,31 @@ nav ul li {
     font-size: larger;
     font-weight: bold;
 }
+nav button {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: yellowgreen;
+    border-radius: 12px;
+    flex-basis: 20%;
+    position: relative;
+    left: 115px;
+    height: auto;
+    transition: all 100ms ease-in-out;
+}
 
+nav button:hover {
+    opacity: 0.5;
+    color: black;
+    font-size: bold;
+    box-shadow: 0px 5px 5px whitesmoke;
+
+}
 .body-content {
     width: inherit;
-    /* background: url('images/pexels-henry-&-co-1939485.jpg'); */
-    background-color: skyblue;
+    background: url('images/pexels-henry-&-co-1939485.jpg');
+    /* background-color: skyblue; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,13 +71,14 @@ nav ul li {
     align-items: center;
     position: absolute;
     height: inherit;
-    width: 70%;
-    /* border: 2px red solid; */
+    flex-basis: 70%;
+    flex-wrap: wrap;
+    border: 2px red solid;
 }
 
 .body-text h1{
 
-    color: whitesmoke;
+    color: #262626;
     font-family: mv boli;
     line-height: 120px;
     font-size: 120px;
@@ -67,35 +88,27 @@ nav ul li {
     font-size: 190px;
 }
 .body-text img {
-    width: 40%;
-    height: inherit;
+    flex-basis: auto;
+    height: auto;
+    width: 500px;
+    flex-shrink: 1;
+    flex-grow: 0;
 }
 .pizza-image {
-    width: 50%; 
+    flex-basis: 50%; 
     float: left; 
     height:inherit;
 }
-.menu-btn {
-    position: relative;
-    bottom: 10px;
-    left: 30px;
-    width: 100px;
-    color: black;
-    font-size: large;
-    height: 40px;
-    background-color: yellowgreen;
-    border-radius: 12px;
-    transition: all 100ms ease-in-out;
+.menu-btn a{
+    background-color: green;
 }
 .menu-btn:hover {
+
     /* opacity: 0.7; */
     color: whitesmoke;
     font-size: large;
     font-weight: bold;
     box-shadow: 10px 10px 5px black;
-}
-.body-image .right {
-    border-radius: 12% 0 0 12%;
 }
 
 footer {

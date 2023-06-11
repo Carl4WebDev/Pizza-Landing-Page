@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* background: url('images/pexels-henry-&-co-1939485.jpg'); */
+    background-color: skyblue;
+    background-position: center;
+    background-size: cover;
+    background: url("images/pexels-henry-&-co-1939485.jpg");
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: url('images/Untitled_design-removebg-preview.png');
+}
+
+nav {
+    background-color: #262626;
+    height: 5vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+nav button {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: yellowgreen;
+    border-radius: 12px;
+    flex-basis: 20%;
+    position: relative;
+    height: auto;
+    transition: all 100ms ease-in-out;
+
+    margin: 0 50px 0 50px;
+}
+
+nav button:hover {
+    opacity: 0.5;
+    color: black;
+    font-size: bold;
+    box-shadow: 0px 5px 5px whitesmoke;
+}
+
+nav ul li {
+    text-decoration: none;
+    color: whitesmoke;
+    display: inline;
+    margin: 0 40px 0 40px;
+}
+
+/* menu */
+.menu-container {
+    display: grid;
+    /* margin: 0 auto; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    gap: 5px;
+}
+.menu-container .menu-item{
+    width: 300px;
+    height: 400px;
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+.menu-image {
+    background-color: black;
+    width: inherit;
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+.menu-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+
+    transition: all 100ms ease-in-out;
+}
+.menu-image img:hover {
+    transform: scale(1.5);
+}
+.menu-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.menu-info h1 {
+    font-weight: bold;
+    border-bottom: 2px  #262626 solid;
+    margin-bottom: 5px;
+    color:  #262626;
+}
+
+.menu-info p {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #262626
+}
+.menu-info h2 {
+    font-size: 50px;
+    color: #23d204;
+    margin-bottom: 10px;
+}
+.menu-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #23d204;
+    border-radius: 12px;
+    color: #262626;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    transition: all 100ms ease-in-out;
+}
+.menu-info a:hover {
+    opacity: 0.5;
+    color: whitesmoke;
+    font-size: bold;
+    box-shadow: 0px 5px 5px #262626;
+}
+
+
+
+

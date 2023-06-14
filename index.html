@@ -5,40 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Pizza lover</title>
+    <script src="https://kit.fontawesome.com/c5b9dd28a7.js"></script>
+    <title>Pizza</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
-            <div class="nav-img">
-                <img src="https://placehold.co/60x40"  alt="pizza-brand">
-            </div>
-            <button>Menu</button>
-            <ul>
-                <li>Social Media Pages</li>
-                <li>About Us</li>
-            </ul>
-        </nav>
-        <div>
+    
+    <nav class="navbar">
+        <button>Menu</button>
+        <div class="navbar-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-        
+        <ul>
+            <li class="navbar-links" id="about"><a href="#">Phone</a></li>
+            <li class="navbar-links"><a href="#">Location</a></li>
+            <li class="navbar-links"><a href="#" id="contact">Facebook</a></li>
+            <li class="navbar-links"><a href="#" id="contact">Instgram</a></li>
+        </ul>
+    </nav>
+    <div class="toggle-bar-container">
+        <ul>
+                <div class="bg-image-toggle">
+                    <li class="navbar-links-mobile" id="about"><a href="#">Phone</a></li>
+                    <li class="navbar-links-mobile"><a href="#">Location</a></li>
+                    <li class="navbar-links-mobile"><a href="#" id="contact">Facebook</a></li>
+                    <li class="navbar-links-mobile"><a href="#" id="contact">Instgram</a></li>
+                </div>
+            </ul>
+    </div>
+    <div class="bgImage">
+
         <div class="body-content">
-            <div class="body-text ">
-                <h1> Eat The  <br> <span> Pizza! </span> <br> You Love!</h1>
-                <!-- <div class="menu-btn"><a href="menu.html" >Menu</a></div> -->
+            <div class="text-content">
+                <h1> Eat The  <br> <span> Pizza! </span> <br> You Love.</h1>
                 <img src="images/pizza-g93775ad77_1280-removebg-preview.png" alt="">
             </div>
-            <img src="./images/pizza-doodle-icon-set-vector-removebg-preview.png" class="pizza-image" alt="">
-            <img src="./images/pizza-doodle-icon-set-vector-removebg-preview.png" class="pizza-image right" alt="">
         </div>
-    
-        <footer>
-            <a href="https://github.com/Carl4WebDev">https://github.com/Carl4WebDev</a>
-        </footer>
+        
     </div>
     
-
+    <footer>
+        https://github.com/Carl4WebDev
+    </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>

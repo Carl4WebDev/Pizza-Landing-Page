@@ -66,11 +66,16 @@ nav button {
     min-width: 20%;
     transition: all 100ms ease-in-out;
 }
-
-nav button:hover {
-    opacity: 0.5;
+nav button a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav button a:hover{
     color: black;
     font-size: bold;
+}
+nav button:hover {
+    opacity: 0.5;
     box-shadow: 0px 5px 5px whitesmoke;
     
 }

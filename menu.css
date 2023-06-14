@@ -41,14 +41,18 @@ nav button {
 
     margin: 0 50px 0 50px;
 }
-
-
-nav button:hover {
-    opacity: 0.5;
+nav button a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+nav button a:hover{
     color: black;
     font-size: bold;
+}
+nav button:hover {
+    opacity: 0.5;
+    font-size: bold;
     box-shadow: 0px 5px 5px whitesmoke;
-    
 }
 
 nav ul li {

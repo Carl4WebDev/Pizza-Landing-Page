@@ -19,9 +19,14 @@ body {
     
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+}
+.navbar-links {
     
-    
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 20px 0 10px;
+
+    transition: all 100ms ease-in-out;
 }
 .navbar-links a{
     color: whitesmoke;

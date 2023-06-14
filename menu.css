@@ -66,24 +66,23 @@ nav ul li {
 /* menu */
 .menu-container {
     display: grid;
-    /* margin: 0 auto; */
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr ;
     gap: 5px;
     margin-top: 10px ;
 }
 .menu-container .menu-item{
-    width: 300px;
-    height: 400px;
-    padding: 20px;
+    min-width: 300px;
+    min-height: 400px;
+    padding: 10px;
     margin-bottom: 10px;
+    border: 2px solid red;
 
 }
 .menu-image {
     background-color: black;
     width: inherit;
-    height: 50%;
+    min-height: 20%;
     overflow: hidden;
     margin-bottom: 10px;
     border-radius: 12px;
@@ -142,6 +141,7 @@ nav ul li {
     font-size: bold;
     box-shadow: 0px 5px 5px #262626;
 }
+
 
 
 

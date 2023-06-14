@@ -1,28 +1,41 @@
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-.container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    background: url('images/pexels-henry-&-co-1939485.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
+
 .navbar {
-    min-width: 320px;
     min-height: 5%;
     background-color: #262626;
     padding: 10px;
-
+    
     display: flex;
     justify-content: space-between;
 }
 .navbar-links {
-
+    
     display: inline-block;
     list-style-type: none;
     margin: 0 20px 0 10px;
+
+    transition: all 100ms ease-in-out;
 }
 .navbar-links a{
     color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar-links a:hover{
+    background-color: yellowgreen;
+    color: #262626;
 }
 
 .toggle-bar-container{
@@ -31,14 +44,17 @@ body {
 .navbar-links-mobile {
     display: none;
 }
+.navbar-toggle{
+    display: none;
+}
 nav {
-    position: fixed;
     width: 100%;
     background-color: #262626;
     z-index: 1;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    /* padding: 10px 0 10px 0; */
+    padding: 10px auto;
 }
 nav button {
     text-decoration: none;
@@ -61,6 +77,53 @@ nav button:hover {
 .active {
     display: block;
 }
+/* Body */
+
+.bgImage{
+    background: url('images/Untitled_design-removebg-preview.png');
+    min-width: 100%;
+    min-height: 100vh;
+}
+/* .body-content {
+    border: 2px red solid;
+
+} */
+.text-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    flex-wrap: wrap;
+}
+
+.text-content h1{    
+    color: #262626;
+    font-family: mv boli;
+    line-height: 120px;
+    font-size: 100px;
+    float: left;
+
+}
+.text-content h1 span{
+    color: yellowgreen;
+    font-size: 190px;
+}
+.text-content img{
+    flex-basis: auto;
+    height: auto;
+    min-width: 20%;
+    float: right;
+}
+footer{
+    min-width: 100%;
+    min-height: 5vh;
+    background-color: #262626;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (max-width: 609px) {
     
@@ -68,40 +131,84 @@ nav button:hover {
         display: none;
     }
     nav button {
-        min-width: 100%;
+        min-width: 50%;
+        position: absolute;
+        left: 0;
+        margin: 0 0 0 0px;
     }
     nav {
-        display: none;
-        height: 5vh;
-        flex-wrap: wrap;
+        min-height: 5vh;
+        min-width: 90%;
+        padding: 10px auto;        
     }
     .toggle-bar-container {
-        width: 100% ;
-        background-color: transparent;
-        height: 5vh;
-        /* display: flex;
-        justify-content: flex-start; */
-        
-    }
-    .toggle-bar-container ul li {
-        list-style-type: none;
+        min-height: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+        z-index: 1;
     }
     .navbar-toggle {
-        display: block;
-        position: inherit;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        width: 30px;
+        height: 25px;
+        position: absolute;
+        right: 0;
     }
     .navbar-links-mobile {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        list-style-type: none;
         display: none;
-        width: 100%;
-        text-align: center;
-        margin: 10px 0 10px 0;
+        padding: 10px;
+        min-width: 100%;
+        margin: 10px auto; 
+        background: url('images/Untitled_design-removebg-preview.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
-    .navbar-links-mobile:hover{
-        background-color: black;
-        width: 100%;
-        height: 100%;
-    }
-
-
     
+    .bg-image-toggle {
+        background: url('images/pexels-henry-&-co-1939485.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .toggle-bar-container ul {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        
+    }
+    .navbar-links-mobile a {
+        text-decoration: none;
+        color: #262626;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-links-mobile:hover{
+        background-color: greenyellow;
+        min-width: 100%;
+    }
+    
+    /* Body */
+    .text-content h1{    
+        font-size: 50px;
+    }
+    .text-content h1 span{
+        color: yellowgreen;
+        font-size: 100px;
+    }
 }

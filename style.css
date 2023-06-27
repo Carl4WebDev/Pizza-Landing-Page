@@ -123,10 +123,13 @@ footer{
     min-width: 100%;
     min-height: 5vh;
     background-color: #262626;
-    color: whitesmoke;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+footer a{
+    color: whitesmoke;
+    text-decoration: none;
 }
 
 
